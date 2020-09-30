@@ -27,3 +27,7 @@ do
    echo $j
 done | sort -nr
 
+for x in ${array[@]}
+do
+   echo $x
+done | sort -n
