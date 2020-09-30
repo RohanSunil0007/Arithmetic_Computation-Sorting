@@ -12,3 +12,12 @@ dict[0]=$result
 dict[1]=$result1
 dict[2]=$result2
 dict[3]=$result3
+
+n=0
+for i in ${dict[@]}
+do
+	array[$n]=$i
+	((n++))
+done
+
+echo "Array values are :" ${array[@]}
