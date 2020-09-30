@@ -21,3 +21,9 @@ do
 done
 
 echo "Array values are :" ${array[@]}
+
+for j in ${array[@]}
+do
+   echo $j
+done | sort -nr
+
